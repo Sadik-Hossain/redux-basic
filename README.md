@@ -20,7 +20,8 @@ intialState = {count: 0}
 
 ## example
 
-cnst ActionType = "increment"
+{
+const ActionType = "increment"
 const someAction = ()=>{
 return{
 type:ActionType,
@@ -32,11 +33,13 @@ name:"ABC"
     }
 
 }
+}
 
 # ------------ REDUCER --------------------
 
 # reducer muloto ekta pure function (je func. input niye definetely kisu output dibe)
 
+{
 const counterReducer = (state=initialState,action)=>{
 switch (action.type) {
 case INCREMENT:
@@ -56,4 +59,6 @@ count: state.count - 1,
     return  state; //* definetely kisu return krbo
 
 }
+}
+
 }
